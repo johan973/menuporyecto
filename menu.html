@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Proyecto Johan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    }
+
+    .contenedor {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .foto-izq {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 3px solid #2980b9;
+      object-fit: cover;
+    }
+
+    .logo-colegio {
+      width: 120px;
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .texto {
+      flex: 1;
+      margin: 0 20px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2c3e50;
+      text-align: center;
+      user-select: none;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 20px 10px;
+      font-size: 2rem;
+      background: linear-gradient(to right, green, red, skyblue, yellow);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: bold;
+    }
+
+    .subtitulo {
+      text-align: center;
+      font-weight: 500;
+      font-size: 1rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: linear-gradient(to right, green, red, skyblue, yellow);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .menu-wrapper {
+      max-width: 1000px;
+      margin: 0 auto 30px;
+      border-radius: 12px;
+    }
+
+    ul.principal-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      background: linear-gradient(to right, #3498db, #6c5ce7);
+      border-radius: 12px;
+    }
+
+    ul.principal-menu > li {
+      position: relative;
+      flex: 1;
+      text-align: center;
+    }
+
+    ul.principal-menu > li > a {
+      display: block;
+      padding: 16px;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    ul.principal-menu > li:hover > a {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    ul.sub-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 100;
+    }
+
+    ul.principal-menu > li:hover .sub-menu {
+      display: block;
+    }
+
+    ul.sub-menu li {
+      padding: 10px;
+    }
+
+    ul.sub-menu li a {
+      display: inline-block;
+      width: 80%;
+      padding: 10px;
+      background: linear-gradient(to right, #4caf50, #81c784);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    ul.sub-menu li a:hover {
+      background: linear-gradient(to right, #388e3c, #66bb6a);
+    }
+
+    .imagen-programacion {
+      text-align: center;
+      margin: 30px auto 50px auto;
+      max-width: 600px;
+    }
+
+    .imagen-programacion img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      ul.principal-menu {
+        flex-direction: column;
+      }
+
+      ul.sub-menu {
+        position: relative;
+        box-shadow: none;
+        display: block;
+        border-radius: 0;
+      }
+
+      ul.sub-menu li {
+        text-align: center;
+      }
+
+      ul.sub-menu li a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    
+    <div class="texto">Johan Moreira Macías - 3ro BT M</div>
+    <img src="nicolas.png" alt="Logo Colegio" class="logo-colegio" />
+  </div>
+
+  <h1>Proyecto Técnico Informática 2025 - 2026</h1>
+
+  
+
+  <div class="menu-wrapper">
+    <ul class="principal-menu">
+      <li>
+        <a href="#">Diseño y Desarrollo Web</a>
+        <ul class="sub-menu">
+          <li><a href="trimestre1.html">Trimestre 1</a></li>
+          <li><a href="#">Trimestre 2</a></li>
+          <li><a href="#">Trimestre 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Soporte Técnico</a>
+        <ul class="sub-menu">
+          <li><a href="#">Trimestre 1</a></li>
+          <li><a href="#">Trimestre 2</a></li>
+          <li><a href="#">Trimestre 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Sistemas Operativos y Redes</a>
+        <ul class="sub-menu">
+          <li><a href="#">Trimestre 1</a></li>
+          <li><a href="#">Trimestre 2</a></li>
+          <li><a href="#">Trimestre 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Programación y Base de Datos</a>
+        <ul class="sub-menu">
+          <li><a href="#">Trimestre 1</a></li>
+          <li><a href="#">Trimestre 2</a></li>
+          <li><a href="#">Trimestre 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Aplicaciones Ofimática</a>
+        <ul class="sub-menu">
+          <li><a href="#">Trimestre 1</a></li>
+          <li><a href="#">Trimestre 2</a></li>
+          <li><a href="#">Trimestre 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+ 
+
+</body>
+</html>
